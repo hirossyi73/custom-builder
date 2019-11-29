@@ -1,0 +1,22 @@
+{
+    "name": "hirossyi73/custom-builder",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CustomBuilder\\": "src/",
+            "CustomBuilder\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CustomBuilder\\CustomBuilderServiceProvider"
+            ]
+        }
+    }
+}
